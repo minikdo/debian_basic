@@ -14,7 +14,7 @@
 (setq backup-inhibited t)
 
 ;; Other settings
-(setq-default fill-column 80)
+(setq-default fill-column 9999)
 (setq auto-fill-mode t)
 (setq-default auto-fill-function 'do-auto-fill)
 
