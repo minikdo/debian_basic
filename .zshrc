@@ -110,7 +110,6 @@ export SAVEHIST=0
 
 alias zshrc="$EDITOR ~/.zshrc"
 alias zshh="$EDITOR ~/.zsh_history"
-alias dq='dpkg -l | grep -i'
 alias dl='dpkg -l | less -S'
 alias acsh='apt-cache show'
 alias ach='apt changelog'
@@ -119,6 +118,12 @@ alias jc='journalctl'
 alias lf='systemctl list-units --state=failed'
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+function dq () {
+    dpkg-query -W \
+               -f='${binary:Package} '"$fg[blue]"'(${Version})'"$reset_color"'\n' \
+        | grep -i --colour=never $1
+}
 
 # eval "$(direnv hook zsh)"
 
