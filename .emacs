@@ -1,3 +1,6 @@
+;; Default mode
+(custom-set-variables '(major-mode (quote conf-mode)))
+
 ;; Load theme
 (load-theme 'manoj-dark)
 
