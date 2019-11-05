@@ -115,13 +115,14 @@ alias acsh='apt-cache show'
 alias ach='apt changelog'
 alias jf='journalctl -f'
 alias jc='journalctl'
+alias uq='systemctl list-units | grep $1'
 alias lf='systemctl list-units --state=failed'
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 function dq () {
     dpkg-query -W \
-               -f='${binary:Package} '"$fg[blue]"'(${Version})'"$reset_color"'\n' \
+               -f='${db:Status-Abbrev}${binary:Package} '"$fg[blue]"'(${Version})'"$reset_color"'\n' \
         | grep -i --colour=never $1
 }
 
