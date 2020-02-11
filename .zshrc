@@ -138,4 +138,8 @@ setopt completealiases
 apt_pref="apt"
 apt_upgr="upgrade"
 
+if [ -f ~/.config/fzf/key-bindings.zsh ]; then
+    . ~/.config/fzf/key-bindings.zsh
+fi
+
 # --- END ---
