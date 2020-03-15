@@ -113,8 +113,8 @@ alias zshh="$EDITOR ~/.zsh_history"
 alias dl='dpkg -l | less -S'
 alias acsh='apt-cache show'
 alias ach='apt changelog'
-alias jf='journalctl -f'
-alias jc='journalctl --since today'
+alias jf='journalctl -f -n1000'
+alias jc='journalctl -xe --since today'
 alias uq='systemctl list-units | grep $1'
 alias lf='systemctl list-units --state=failed'
 alias cls="echo -ne '\033c'" # urxvt terminal clean buffer
