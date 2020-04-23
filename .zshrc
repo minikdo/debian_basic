@@ -114,7 +114,7 @@ alias dl='dpkg -l | less -S'
 alias acsh='apt-cache show'
 alias ach='apt changelog'
 alias jf='journalctl -f -n20'
-alias jc='journalctl -xe --since today'
+alias jc='journalctl -e --since today'
 alias uq='systemctl list-units | grep $1'
 alias lf='systemctl list-units --state=failed'
 alias cls="echo -ne '\033c'" # urxvt terminal clean buffer
@@ -134,7 +134,7 @@ bindkey "^[k" ipaddr
 # eval "$(direnv hook zsh)"
 
 unsetopt share_history
-setopt completealiases   
+setopt completealiases
 
 apt_pref="apt"
 apt_upgr="upgrade"
