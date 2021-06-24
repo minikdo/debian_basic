@@ -1,0 +1,7 @@
+unset backup
+unset quickblank
+set constantshow
+set positionlog
+set tabstospaces
+set tabsize 4
+
