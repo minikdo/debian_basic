@@ -117,6 +117,7 @@ alias jf='journalctl -f -n20'
 alias jc='journalctl --since today'
 alias uq='systemctl list-units | grep $1'
 alias lf='systemctl list-units --state=failed'
+alias ss='sudo ss -ltunp'
 alias cls="echo -ne '\033c'" # urxvt terminal clean buffer
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
