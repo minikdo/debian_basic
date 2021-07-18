@@ -132,7 +132,7 @@ function ipaddr () { echo; ip -c a; zle redisplay }
 zle -N ipaddr
 bindkey "^[k" ipaddr
 
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 unsetopt share_history
 setopt completealiases
