@@ -119,6 +119,7 @@ alias uq='systemctl list-units | grep $1'
 alias lf='systemctl list-units --state=failed'
 alias ss='sudo ss -ltunp'
 alias cls="echo -ne '\033c'" # urxvt terminal clean buffer
+alias ahu="apt-history upgrade"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
