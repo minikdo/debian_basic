@@ -28,13 +28,11 @@
 (setq linum-format "%4d ")
 
 ;; Save cursor position in files
+(save-place-mode 1)
 (setq save-place-file "~/.emacs.d/saveplace")
-(setq-default save-place t)
-(require 'saveplace)
-
+;;(setq-default save-place t)
 
 ;; Extra functions
-
 (defun ff/comment-and-go-down (arg)
   "Comments and goes down ARG lines."
   (interactive "p")
