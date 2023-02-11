@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export GLOBALIAS_FILTER_VALUES=(grep glods ls pass uq ip)
 
 #TERM=xterm-256color
 
@@ -60,7 +61,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian systemd sudo history man z) 
+plugins=(git debian systemd sudo history man globalias z) 
 
 
 # User configuration
